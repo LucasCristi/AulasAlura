@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALCOOL OU GASOLINA</title>
+
+    <button onclick="mostrar()">aqui</button>
+    <input id="gasolina" placeholder="gasolina">
+    
+    <button onclick="mostrarAlcool()">aqui</button>
+    <input id="alcool" type="text" placeholder="álcool">
+    
+</head>
+<body>
+    
+<script>
+
+var tanque = 40
+var caminho = 480
+
+consumo = caminho / tanque
+
+function mostrar(){
+    document.getElementById("gasolina").value = consumo
+}
+   
+
+var caminhoAlcool = 300
+
+consumoAlcool = caminhoAlcool / tanque
+function mostrarAlcool(){
+    document.getElementById("alcool").value = consumoAlcool
+}
+
+var pularLinha = ("<br>")
+
+testeparacommit
+
+</script>
+
+</body>
+</html>
