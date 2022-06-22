@@ -42,7 +42,24 @@ var pesoInformado = prompt(`${nome}, informe o seu peso.`);
 var imc = calculaImc(pesoInformado, alturaInformada);
 
 function mostra() {
+
+    if (imc < 18.5) {
+        
+        alert("Você está abaixo do peso.")
+        
+    } else if (imc >= 18.5 && imc <= 30) {
+        
+        alert("Seu IMC está excelente.")
+        
+    } else if (imc > 30) {
+       
+        alert("Você está acima do peso.")
+    }
     document.getElementById("imc").value = imc.toFixed(2)
 }
 
 
+
+18, 5
+35
+18, 5 - 35
