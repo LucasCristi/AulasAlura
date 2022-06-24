@@ -1,3 +1,5 @@
+//CONTADOR COM INCREMENTO E EXCLUSAO DE NUMEROS
+
 var contador = 30;
 
 while(contador <= 40) {
@@ -15,6 +17,8 @@ while(contador <= 40) {
   }
 console.log("FIM")
 
+//CONTADOR COM DECREMENTO
+
 var contador = 20;
 
 while(contador >= 0) {
@@ -23,3 +27,15 @@ while(contador >= 0) {
     contador = contador -1
   }
 console.log("FIM")
+
+//DESAFIO ALURA
+
+var anoCopa = 1930;
+    var limite = 2020
+
+    while(anoCopa <= limite) {
+
+        console.log(anoCopa);
+        anoCopa = anoCopa + 4;
+    }
+    console.log(anoCopa)
