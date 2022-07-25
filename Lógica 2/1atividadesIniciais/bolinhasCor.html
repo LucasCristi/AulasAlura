@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        pincel.fillStyle = 'grey';
+        pincel.fillRect(0, 0, 600, 400);
+
+        var cores = ['blue', 'red', 'green'];
+        var corAtual = 0;
+        var raio = 10;
+
+        function desenhaCirculo(evento) { //parametro que vem do html
+
+            var x = evento.pageX - tela.offsetLeft; //offset para não haver margem no canvas
+            var y = evento.pageY - tela.offsetTop;
+
+            if (evento.shiftKey && evento.altKey) {
+                alert('aperte uma tecla de cada vez');
+            } else if(evento.shiftKey && raio + 10 <= 40) {
+                raio = raio + 10;
+            } else if(evento.altKey && raio - 5 >= 10) {
+                raio = raio -5;
+            }
+
+            pincel.fillStyle = cores[corAtual];
+            pincel.beginPath();
+            pincel.arc(x, y, raio, 0, 2 * 3.14); //circulo no clique
+            pincel.fill();
+        }
+
+        tela.onclick = desenhaCirculo; //onclick na tela, eixos X e Y do canvas
+
+        function mudaCor() {
+
+            corAtual++;
+            if (corAtual >= cores.length) {   //percorre array para mudar a cor
+                corAtual = 0;
+            }
+            alert(corAtual); //alert para cor atual
+            return false;
+        }
+
+        tela.oncontextmenu = mudaCor; //clique com botao direito para alterar cor
+
+    </script>
+
+</body>
+
+</html>
