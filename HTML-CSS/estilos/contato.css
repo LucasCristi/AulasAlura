@@ -1,7 +1,96 @@
+
+#banner {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+.head-principal{
+    position: relative;
+    margin: 0 auto;
+}
+
 header {
     background: #bbbbbb;
-    padding: 20px 0;
-    height: 230px;
+    padding: 10px 0;
+}
+
+h1 img {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.principal {
+    background: #cccccc;
+    padding: 12px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo-principal {
+    padding-left: 20px;
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+em strong {
+    color: #ff0000;
+}
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios{
+    background: #cccccc;
+    padding: 12px;
+}
+
+h3{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+}
+
+.beneficios ul {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 5px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 20%;
+    margin-right: 15%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+}
+
+.imagembeneficios {
+    max-width: 40%;
+    margin-top: 5px;
+}
+
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
 }
 
 .caixa {
@@ -23,31 +112,42 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 15px;
     text-decoration: none;
-    transition: 1s all;
+    transition: 2s all;
 }
 
 nav a:hover {
-    color: darkorange;
-    text-decoration: underline;
-    transform: scale(1.2);
+    color: rgb(15, 204, 252);
+    text-decoration: dashed;
+}
+
+#missao {
+    font-size: 20px;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+em strong {
+    color: #ff0000;
+}
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios{
+    background: #cccccc;
+    padding: 12px;
 }
 
 .produtos img {
-    width: 200px;
+    width: 50%;
 
 }
 
-
-
-.copyright {
-    color: #ffffff;
-    font-size: 13px;
-    margin: 20px 0 0;
-}
 
 main {
     width: 940px;
@@ -108,8 +208,67 @@ td, th {
     padding: 8px 15px;
 }
 
+
+.produtos img {
+    max-width: 200px;
+}
+
+#barba{
+    margin: 35px 0;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #28e0d0;
+}
+
+.produtos li:active {
+    border-color: #fb1be8;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricao-produto {
+    font-size: 18px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 footer {
     text-align: center;
     background-color: #000000;
-    padding: 40px 0;
+    padding: 0;
+    width: 100%;
+}
+
+footer > img {
+    width: 5%;
 }
