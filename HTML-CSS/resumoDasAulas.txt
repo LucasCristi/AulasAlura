@@ -5,3 +5,32 @@ Medidas proporcionais com CSS;
 Como funciona a flutuação dos elementos e como modificá-la, com a propriedade float do CSS;
 
 Como limpar o float, com a propriedade clear do CSS;
+
+A utilizar fontes externas nas nossas páginas;
+
+Como incorporar um mapa à nossa página;
+
+Como incorporar um vídeo à nossa página;
+
+A melhorar mais ainda a semântica da página principal, com novas divisões, classes, etc;
+
+Novas pseudo-classes;
+
+Como aplicar um background gradiente na página;
+
+Pseudo-elementos;
+
+SELETORES AVANÇADOS =>
+
+main > p = filho direto do main;
+img + p = vem logo após a imagem;
+img ~ p = pega todos os seletores p após img;
+.principal p:not(#ID) = pega todos os p exceto onde tem algum id que seja informado;
+
+Como manipular a opacidade dos elementos, com a propriedade CSS opacity;
+
+Como manipular a opacidade das cores;
+
+Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow;
+
+Como adicionar um sombreamento em textos, com a propriedade CSS text-shadow;
