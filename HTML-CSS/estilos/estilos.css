@@ -1,9 +1,21 @@
 body {
     font-family: 'PT Serif', serif;
+    margin: 0;
 }
 
-#bannercabecalho {
-    margin: 0 0 0 20px;
+#bannercabecalho{
+    margin-left: 20px;
+}
+
+.nomeprincipal{
+    color: #ffffff;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 170px;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace; 
+    text-decoration: solid;
+    text-shadow: 5px 5px 10px #28e0d0;
 }
 
 #banner {
@@ -18,7 +30,9 @@ body {
 }
 
 header {
-    background: #000;
+    background-image: url(https://img.freepik.com/fotos-gratis/close-up-full-frame-shot-preto-fosco-textura-metalica-de-fundo_75775-843.jpg?size=626&ext=jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 10px 0 0 10;
 }
 
@@ -63,8 +77,8 @@ h3 {
 
 nav {
     position: absolute;
-    top: 110px;
-    right: 50px;
+    top: 430px;
+    right: 20px;
 }
 
 nav li {
@@ -73,22 +87,23 @@ nav li {
 }
 
 nav ul {
-    background: rgba(0, 0, 0, 0.75);
-    border-radius: 5px;
+    word-spacing: 30px;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 nav a {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
-    transition: 2s all;
+    transition: 1s all;
 }
 
 nav a:hover {
-    color: rgb(15, 204, 252);
-    text-decoration: dashed;
+    color: rgb(108, 223, 223);
+    text-decoration: solid;
+    text-shadow: 5px 5px 5px #28e0d0;
 }
 
 #missao {
@@ -97,18 +112,29 @@ nav a:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.tabela-contato, table{
+    display: flex;
+    justify-content: center;
+}
 
+table{
+    margin: 10px;
+}
+
+form{
+    text-align: center;
+    align-items: center;
+}
 
 form label,
 form legend {
     display: block;
     font-size: 20px;
-    margin: 0 0 10px;
+    margin-top: 8px;
 }
 
 .input-padrao {
-    display: block;
-    margin: 0 0 20px;
+    margin: 5px 0 15px;
     padding: 10px 25px;
     width: 50%;
 }
@@ -135,13 +161,9 @@ form legend {
     transform: scale(1.2);
 }
 
-table {
-    margin: 20px 0 40px;
-}
-
 thead {
     background: #bbbbbb;
-    color: white;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -151,9 +173,20 @@ th {
     padding: 8px 15px;
 }
 
+.main-produto, main.tabela-contato{
+    background: linear-gradient( rgb(255, 255, 255), #888888);
+    margin: 0;
+}
 
 .produtos img {
     max-width: 200px;
+    border-radius: 5px;
+}
+
+.titulo-contato {
+    text-align: center;
+    font-size: 2em;
+    margin: 10px;
 }
 
 .produtos {
@@ -172,10 +205,14 @@ th {
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: 1s;
 }
 
 .produtos li:hover {
     border-color: #28e0d0;
+    box-shadow: -15px -10px 30px #000;
 }
 
 .produtos li:active {
@@ -191,6 +228,7 @@ th {
 
 .produtos ul {
     width: 200px;
+    
 }
 
 .descricao-produto {
@@ -212,7 +250,7 @@ th {
 
 .mapa {
     padding: 3em 0;
-    background: linear-gradient( #fff, #888888);
+    background: linear-gradient( rgb(255, 255, 255), #888888);
     
 }
 
@@ -268,13 +306,15 @@ th {
 
 .video:hover{
     opacity: 0.85;
-    box-shadow: -15px -10px 20px #000;   
+    box-shadow: -15px -10px 30px #000;   
     width: 540px;
 }
 
 footer {
     text-align: center;
-    background-color: #000000;
+    background-image: url(https://img.freepik.com/fotos-gratis/close-up-full-frame-shot-preto-fosco-textura-metalica-de-fundo_75775-843.jpg?size=626&ext=jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 0;
     width: 100%;
 }
@@ -286,10 +326,13 @@ footer {
 }
 
 @media screen and (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .nomeprincipal{
         width: auto;
-        margin: auto;
-        
+        margin: auto;   
+    }
+
+    .nomeprincipal{
+        font-size: 10px;
     }
 
     .principal, .beneficios li{
@@ -333,7 +376,7 @@ footer {
     }
     
     ul.produtos{
-        background: linear-gradient(rgb(170, 169, 169), #000);
+        background: linear-gradient( rgb(255, 255, 255), #888888);
     }
   
     .produtos li{
@@ -342,7 +385,17 @@ footer {
         margin-top: 20px;
     }
 
-    .produtos li ~ img{
-        width: 50%;
+    .produtos li> img{
+        width: 100%;
     }
+
+    .tabela-contato{
+        padding: 5px;
+        background: radial-gradient(#fff, #858484);
+    }
+
+    .tabela-horario{
+        margin: 5px;
+    }
+
 }
