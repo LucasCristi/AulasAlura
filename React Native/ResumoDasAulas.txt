@@ -1,0 +1,10 @@
+AULA 1 
+
+Preparar o ambiente
+Instalamos o Node.js e o Expo para poder desenvolver aplicativos React Native com Expo.
+Diferenças entre React Native CLI e Expo CLI
+Entendemos que o Expo CLI cria uma aplicação React Native com limitações, em contrapartida podemos testar nossas aplicações sem configurar Android Studio ou Xcode.
+Criar um aplicativo Expo do zero
+Utilizamos o Expo CLI para criar um projeto React Native em branco.
+Função live reload
+O React Native vem por padrão com a funcionalidade de live reload, que atualiza a tela do app ao salvar novos códigos em tempo real.
